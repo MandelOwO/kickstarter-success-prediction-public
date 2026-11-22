@@ -1,0 +1,5 @@
+schema,namespace,rows,batches,failed_batches,batches_from_cache,rows_without_answer,requests,api_seconds,prompt_tokens,completion_tokens,wall_seconds_this_run
+manual,pilot,309,16,0,16,0,16,138.9,24033,24182,0.0
+discovered,pilot,309,16,0,0,0,16,158.5,31457,27672,81.7
+manual (opakování),pilot_rerun,60,3,0,3,0,3,26.0,4613,4703,0.0
+discovered (opakování),pilot_rerun,60,3,0,0,0,3,29.8,6005,5379,19.4

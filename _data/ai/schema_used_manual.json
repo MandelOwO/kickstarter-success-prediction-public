@@ -1,0 +1,67 @@
+{
+  "name": "manual",
+  "features": [
+    {
+      "name": "funding_purpose",
+      "type": "category",
+      "description": "What the money is mainly for: manufacturing a product for backers; creating a creative work (book, comic, game, film, album, art); opening, running or saving a business or venue; a charitable or community cause; organising an event; or other.",
+      "values": [
+        "product",
+        "creative_work",
+        "business_operations",
+        "charity_or_cause",
+        "event",
+        "other"
+      ]
+    },
+    {
+      "name": "has_concrete_deliverable",
+      "type": "boolean",
+      "description": "True if the text makes clear that backers will receive a specific thing (a copy, a product, a reward); false if it only asks for support."
+    },
+    {
+      "name": "project_stage",
+      "type": "category",
+      "description": "How far along the project appears to be according to the text.",
+      "values": [
+        "idea",
+        "in_progress",
+        "finished",
+        "unclear"
+      ]
+    },
+    {
+      "name": "appeal_type",
+      "type": "category",
+      "description": "Whether the text sells something to backers (offer) or asks for help for the creator (plea).",
+      "values": [
+        "offer_to_backers",
+        "personal_plea",
+        "mixed"
+      ]
+    },
+    {
+      "name": "specificity",
+      "type": "integer",
+      "description": "How concrete the description is: 1 = vague slogan, 5 = precise what, how and for whom.",
+      "min": 1,
+      "max": 5
+    },
+    {
+      "name": "language",
+      "type": "category",
+      "description": "Main language of the title and description.",
+      "values": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "nl",
+        "ja",
+        "zh",
+        "other"
+      ]
+    }
+  ]
+}

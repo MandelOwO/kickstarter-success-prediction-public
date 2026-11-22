@@ -1,0 +1,47 @@
+{
+  "name": "discovered",
+  "features": [
+    {
+      "name": "has_clear_value_proposition",
+      "type": "boolean",
+      "description": "True if the blurb explicitly states a specific problem the product solves or a unique benefit it provides (e.g., 'aids hydration', 'custom insoles', 'foldable gaming table'). False if the text is purely descriptive, abstract, or focuses only on aesthetic/emotional themes without functional utility."
+    },
+    {
+      "name": "has_tangible_reward",
+      "type": "boolean",
+      "description": "True if the campaign offers a physical item or a specific digital asset (e.g., 'STL files', 'vinyl', 'book', 'pin', 'app') as a reward. False if the campaign is purely for funding an event, service, or intangible experience (e.g., 'performance', 'festival', 'mentorship program', 'documentary screening') without a physical/digital good attached."
+    },
+    {
+      "name": "is_series_continuation",
+      "type": "boolean",
+      "description": "True if the title or blurb explicitly indicates this is a sequel, volume 2, issue #2, or part of an ongoing series (e.g., 'Volume #1', 'Part 3', 'Season 16', '2.0', 'Returns'). False if it is a debut, first edition, or standalone project."
+    },
+    {
+      "name": "creator_credibility_signal",
+      "type": "category",
+      "description": "Trust signals that are explicitly written in the title or blurb. 'awards_or_bestseller': the text names a specific award, prize, nomination or bestseller status (e.g., 'Eisner Award-winning', 'NY Times Bestseller'); military honours or praise like 'acclaimed' do not count. 'established_brand_or_team': the text names a recognisable existing brand, franchise or company, or explicitly mentions the creator's earlier published works or previous campaigns. 'none': everything else, including debut projects, solo creators and creators who only call their own project a brand.",
+      "values": [
+        "none",
+        "awards_or_bestseller",
+        "established_brand_or_team"
+      ]
+    },
+    {
+      "name": "social_or_political_appeal",
+      "type": "boolean",
+      "description": "True if the campaign explicitly leverages social identity, activism, or political causes in its core pitch (e.g., 'LGBT+', 'Black History', 'DEI initiative', 'sustainable', 'privacy-preserving', 'trans art'). False if the focus is purely on entertainment, utility, or aesthetics without a social justice or identity-based angle."
+    },
+    {
+      "name": "technical_complexity",
+      "type": "integer",
+      "description": "Rate the perceived technical sophistication or barrier to entry based on keywords. 1: Simple/Analog (e.g., 'handmade', 'book', 'zine'). 2: Basic Digital/Physical (e.g., 'app', 'standard game'). 3: Moderate Tech (e.g., '3D printable', 'modular', 'custom scan'). 4: Advanced Tech (e.g., 'AI-based', 'VCSEL', 'GNSS', 'Raspberry Pi'). 5: Cutting Edge/Complex (e.g., 'patent-pending', 'cryptocurrency-grade', 'multi-user AI wearable').",
+      "min": 1,
+      "max": 5
+    },
+    {
+      "name": "has_emotional_hook",
+      "type": "boolean",
+      "description": "True if the blurb uses strong emotional language, narrative hooks, or evocative imagery to engage the reader (e.g., 'heartbreak', 'grief', 'magic', 'thrills & chills', 'love', 'resilience'). False if the text is dry, purely functional, or lists specifications without emotional context."
+    }
+  ]
+}
